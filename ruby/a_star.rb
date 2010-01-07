@@ -40,7 +40,7 @@ class AStarNode
   # shortest path, because it may be possible to traverse the least-cost 
   # distance between two nodes along more than one route. The particular path
   # returned by this method is related non-trivially to your node class' hash
-  # and guess_distance methods. Changing either of theses methods will cause a
+  # and guess_distance methods. Changing either of these methods will cause a
   # different path to be selected when multiple paths have the least cost, but
   # not in a way that is predictable in the general case.
   def path_to(goal)
