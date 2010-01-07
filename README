@@ -1,0 +1,18 @@
+AStarNode implements the A* path-finding algorithm for finding the shortest
+path between two nodes or points. To use AStarNode in your program:
+
+* Create a class to represent your nodes and make it a subclass of AStarNode.
+* Override AStarNode's neighbors, guess_distance, and movement_cost methods.
+* Implement your class' hash, eql?, and == methods.
+
+For details about how to write neighbors, guess_distance, and movement_cost,
+see the documentation for those methods. The programs in the examples
+directory may also be helpful in understanding how to implement these methods
+in some common cases.
+
+It is very important for your node class to have proper implementations of
+hash, eql?, and ==. Except in limited circumstances, the default
+implementations inherited from Object will cause AStarNode to fail. If you're
+using Rails and your node class is also an ActiveRecord subclass, you may find
+that the ActiveRecord implementations of these methods are adequate for your
+particular application (but this is not guaranteed).
